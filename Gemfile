@@ -40,3 +40,4 @@ gem 'spring',        group: :development
 
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'rails-i18n'

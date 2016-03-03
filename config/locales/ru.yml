@@ -1,0 +1,12 @@
+ru:
+    Newuser: "Нью юзер"
+    Save: "Засохранить"
+    Back: "Вернуться"
+    activerecord:
+        attributes:
+            user:
+                firstName: "Первое имя"
+                middleName: "Второе имя"
+                lastName: "Пятое имя"
+                login: "Логон"
+                password: "Пассворд"
