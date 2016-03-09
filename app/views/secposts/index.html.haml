@@ -1,0 +1,25 @@
+%h1 Listing secposts
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Body
+      %th User
+      %th
+      %th
+      %th
+
+  %tbody
+    - @secposts.each do |secpost|
+      %tr
+        %td= secpost.title
+        %td= secpost.body
+        %td= secpost.user
+        %td= link_to 'Show', secpost
+        %td= link_to 'Edit', edit_secpost_path(secpost)
+        %td= link_to 'Destroy', secpost, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Secpost', new_secpost_path

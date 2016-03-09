@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @secpost.title
+%p
+  %b Body:
+  = @secpost.body
+%p
+  %b User:
+  = @secpost.user
+
+= link_to 'Edit', edit_secpost_path(@secpost)
+\|
+= link_to 'Back', secposts_path

@@ -1,6 +1,8 @@
 ru:
     Newuser: "Нью юзер"
-    Save: "Засохранить"
+    helpers:
+        submit:
+            create: Засохранить
     Back: "Вернуться"
     activerecord:
         attributes:

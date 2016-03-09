@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :secposts
+
   resources :posts
 
   resources :users
