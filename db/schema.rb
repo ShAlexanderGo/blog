@@ -38,7 +38,8 @@ ActiveRecord::Schema.define(version: 20160309121255) do
     t.string   "middleName"
     t.string   "lastName"
     t.string   "login"
-    t.string   "password"
+    t.string   "password_digest"
+    t.integer  "role"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,5 +1,18 @@
 %h1=t('Newuser')
 
-= render 'form'
+= form_for @user do |f|
+  = error_message_for(@user)
+
+  .form-group
+    = f.label :firstName
+    = f.text_field :firstName, class: 'form-control'
+  .form-group
+    = f.label :login
+    = f.text_field :login, class: 'form-control'
+  .form-group
+    = f.label :password
+    = f.password_field :password, class: 'form-control'
+  .actions
+    = f.submit nil, class: 'btn btn-primary'
 
 = link_to t('Back'), users_path

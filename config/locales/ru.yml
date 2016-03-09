@@ -2,7 +2,7 @@ ru:
     Newuser: "Нью юзер"
     helpers:
         submit:
-            create: Засохранить
+            create: Засохранить %{model}
     Back: "Вернуться"
     activerecord:
         attributes:
