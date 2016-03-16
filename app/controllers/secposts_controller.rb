@@ -14,7 +14,7 @@ class SecpostsController < ApplicationController
 
   # GET /secposts/new
   def new
-    @secpost = Secpost.new
+    @secpost = Secpost.new(user_id: params[:user_id])
   end
 
   # GET /secposts/1/edit

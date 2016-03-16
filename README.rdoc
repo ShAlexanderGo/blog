@@ -104,3 +104,5 @@ _navbar.html.haml
     - else
       %li= link_to 'login', login_path
 """
+rails g kaminari:views bootstrap3
+

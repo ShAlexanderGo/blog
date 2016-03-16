@@ -1,0 +1,13 @@
+.panel.panel-default
+  .panel-heading
+    .pull-right= l(secpost.created_at, format: :long)
+    = secpost.title
+    .clearfix
+  .panel-body
+    = secpost.body
+  .panel-footer
+    .pull-right
+      - if secpost.edit_by? @current_user
+        = link_to 'Editto', edit_secpost_path(secpost)
+        = link_to 'deri-to', secpost_path(secpost), method: :delete
+    .clearfix

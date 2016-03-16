@@ -1,21 +1,9 @@
-%p#notice= notice
-
-%p
-  %b Firstname:
-  = @user.firstName
-%p
-  %b Middlename:
-  = @user.middleName
-%p
-  %b Lastname:
-  = @user.lastName
-%p
-  %b Login:
-  = @user.login
-%p
-  %b Password:
-  = @user.password
-
-= link_to 'Edit', edit_user_path(@user)
-\|
-= link_to 'Back', users_path
+.page-header
+  %h1=@user.login
+- if Secpost.create_by?(@user, @current_user)
+  = link_to 'add post', new_secpost_path(user_id: @user.id), class: 'btn btn-primary'
+- if @secposts.blank?
+  .alert.alert-info Нет записей
+- else
+  - @secposts.each do |secpost|
+    = render 'secposts/secpost', secpost: secpost

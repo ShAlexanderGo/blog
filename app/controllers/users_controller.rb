@@ -4,12 +4,13 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.ordering.page(params[:page]).per(1)
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+      @secposts = @user.secposts.page(params[:page])
   end
 
   # GET /users/new

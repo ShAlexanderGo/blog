@@ -1,6 +1,7 @@
 %nav.navbar.navbar-default.navbar-fixed-top
   .navbar-header
-    = link_to "BLOG", root_path, class: 'navbar_brand'
+    = link_to "BLOG", root_path, class: 'navbar-brand'
+  #navbar.collapse.navbar-collapse
     %ul.nav.navbar-nav
       %li= link_to 'пользователи', users_path
       %li= link_to 'решистрация', new_user_path
