@@ -106,6 +106,11 @@ _navbar.html.haml
 """
 rails g kaminari:views bootstrap3
 ----------------------------------------------------
-17 march
+23 march
 ----------------------------------------------------
-
+Gemfile
+"""
+gem 'paperclip'
+"""
+rails g scaffold Attachment image:attachment position:integer post:belong_to comment
+https://github.com/thoughtbot/paperclip - quickstart rails 4
