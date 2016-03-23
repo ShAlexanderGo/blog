@@ -105,4 +105,7 @@ _navbar.html.haml
       %li= link_to 'login', login_path
 """
 rails g kaminari:views bootstrap3
+----------------------------------------------------
+17 march
+----------------------------------------------------
 
